@@ -1,0 +1,26 @@
+yarn init -y
+yarn add express
+yarn add jest -D
+yarn --init
+-------------------
+√ Would you like to use Jest when running "test" script in "package.json"? ... yes
+√ Choose the test environment that will be used for testing » node
+√ Do you want Jest to add coverage reports? ... no
+√ Automatically clear mock calls and instances between every test? ... yes
+-------------------
+
+yarn add sequelize
+yarn add sequelize-cli -D
+yarn add pg
+yarn add sqlite3 -D
+yarn add nodemon -D 
+
+------
+yarn sequelize init
+yarn add dotenv
+------
+yarn sequelize migration:create --name=create-users
+yarn sequelize db:migrate
+
+yarn add supertest -D
+yarn add bcryptjs
