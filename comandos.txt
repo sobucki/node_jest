@@ -30,3 +30,5 @@ yarn add @types/jest
 ------
 yarn add factory-girl -D
 yarn add faker
+
+yarn add nodemailer
