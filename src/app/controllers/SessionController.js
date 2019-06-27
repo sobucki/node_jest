@@ -10,11 +10,13 @@ class SessionController {
       return res.status(401).json({ message: "User not found" });
     }
 
-    if (password !== user.password_hash) {
+    if (!(await user.checkPassword(password))) {
       return res.status(401).json({ message: "Invalid password" });
     }
 
-    return res.status(200).send();
+    return res.json({
+      token: await user.generateToken()
+    });
   }
 }
 

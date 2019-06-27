@@ -24,3 +24,7 @@ yarn sequelize db:migrate
 
 yarn add supertest -D
 yarn add bcryptjs
+yarn add jsonwebtoken
+------
+yarn add @types/jest
+------
